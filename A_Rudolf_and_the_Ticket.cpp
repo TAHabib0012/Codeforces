@@ -3,19 +3,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define Joldi ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+#define Tahmid ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 #define LL long long int
 #define ULL unsigned long long 
 #define endl '\n'
 
-#define Unique(v) unique(v.begin(),v.end()) - v.begin()
 #define mem(v, x) memset(v, x, sizeof(v))
 #define ceiling(a, b) ((a / b) + (a % b != 0))
 #define gcd(a, b) __gcd(a, b)
 #define lcm(a, b) ((a * b) / gcd(a, b))
-
-#define lowerbound(v,x) lower_bound(v.begin(), v.end(), x)-v.begin()
-#define upperbound(v,x) upper_bound(v.begin(), v.end(), x)-v.begin()
 
 #define yes cout << "YES" << endl;
 #define no cout << "NO" << endl;
@@ -54,7 +50,7 @@ void ans()
 
 int main() 
 {
-    Joldi;
+    Tahmid;
 
     int t;
     cin >> t;
