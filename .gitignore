@@ -8,3 +8,6 @@ output.txt
 *.in
 *.out
 *.prob
+
+# Ignore .vscode file
+*.json
