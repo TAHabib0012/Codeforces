@@ -22,7 +22,7 @@ const LL mod = 998244353;
 
 void ans()
 {
-    int n, m, c = 0;
+    LL n, m, c = 0;
     cin >> n >> m; 
 
     for (int i = n; i <= m; ++i) 
