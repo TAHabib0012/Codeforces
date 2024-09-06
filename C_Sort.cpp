@@ -58,8 +58,6 @@ void ans()
 
         cout << k / 2 << endl;
     }
-    
-
 }
 
 int main() 
