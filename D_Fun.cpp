@@ -34,6 +34,7 @@ void ans()
             c = c + max(0, k);
         }
     }
+    
     cout << c << endl;
 }
 
