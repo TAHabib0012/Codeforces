@@ -22,8 +22,31 @@ const LL mod = 998244353;
 
 void ans()
 {
-    for(int i=0;i<1e4;i++){
-        cout<<1<<" "<<1000000000<<endl;
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+
+    LL c = count(s.begin(), s.end(), '0');
+
+    double f = sqrt(n);
+
+    if (f == floor(f))
+    {
+        LL k = (f - 2) * (f - 2);
+
+        if (k == c)
+        {
+            yes;
+        }
+        else
+        {
+            no;
+        }
+    }
+    else
+    {
+        no;
     }
 }
 
@@ -31,7 +54,8 @@ int main()
 {
     Tahmid;
 
-    int t=1;
+    int t;
+    cin >> t;
  
     while(t--)
     {
