@@ -22,12 +22,12 @@ const LL mod = 998244353;
 
 void ans()
 {
-    int n, m, f = 0, c = 1;
+    int n, m, c = 0, f = 1;
     cin >> n >> m;
     while (c < n)
     {
-        c = c + m - 1;
-        f++;
+        f = f + m - 1;
+        c++;
     }
     
 
