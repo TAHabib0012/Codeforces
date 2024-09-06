@@ -30,7 +30,7 @@ void ans()
 {
     int n;
     cin >> n;
-      
+    
     cout << a[n - 1] << endl;
 }
 
