@@ -65,7 +65,6 @@ void ans()
     {
         no;
     }
-    
 }
 
 int main() 
