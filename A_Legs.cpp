@@ -22,7 +22,7 @@ const LL mod = 998244353;
 
 void ans()
 {
-    int n;
+    LL n;
     cin >> n;
 
     if(n % 4 == 0)
