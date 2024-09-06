@@ -43,9 +43,9 @@ void ans()
         }
     }
         
-    for (auto line : v) 
+    for (int i = 0; i < v.size(); i++) 
     {
-        cout << line << endl;
+        cout << v[i] << endl;
     }
 }
 
