@@ -22,68 +22,34 @@ const LL mod = 998244353;
 
 void ans()
 {
-    LL n, m, k, s = 0;
+    LL n, m, k, s = 0, c = 0, f = 0;
     cin >> n >> m >> k;
-    vector<int> v(n + 1, 0);
+    vector<int> a(n);
     
-    for (int i = 1; i <= n; ++i) 
+    for (int i = 0; i < n; ++i) 
     {
-        cin >> v[i];
-        s = s + v[i];
+        cin >> a[i];
     }
 
-    if (s < m) 
+    for (int i = 0; i < n; i++)
     {
-        cout << "0" << endl;
-        return;
-    }
+        
+        s = s + a[i];
 
-    LL f = 0;
-    int i = 1;
-    while (i <= n) 
-    {
-        if (v[i] > k) 
+        while (s > k && f <= i)
         {
-            ++i;
-        } 
-        else if (v[i] >= m && v[i] <= k) 
-        {
+            s = s - a[f];
             f++;
-            i++;
-        } 
-        else if (v[i] < m && i != n) 
+        }
+        if (s >= m and s <= k) 
         {
-            LL r = 0;
-            int c = -1;
-            for (int j = i; j <= n; ++j) 
-            {
-                r += v[j];
-                if (r > k) 
-                {
-                    break;
-                }
-                if (r >= m && r <= k) 
-                {
-                    c = j;
-                    break;
-                }
-            }
-            if (c != -1) 
-            {
-                f++;
-                i = c + 1;
-            }
-            if (c == -1) 
-            {
-                i++;
-            }
-        } 
-        else 
-        {
-            i++;
+            c++;
+            s = 0;
+            f = i + 1;
         }
     }
-    cout << f << endl;
+    
+    cout << c << endl;
 }
  
 
