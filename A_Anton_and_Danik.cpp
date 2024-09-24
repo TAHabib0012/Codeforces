@@ -24,36 +24,18 @@ void ans()
 {
     int n;
     cin >> n;
+    
     string s;
     cin >> s;
-    queue<char> q;
 
-    for(int i = 0; i < n; i++)
-    {
-        q.push(s[i]);
-    }
+    int f = count(s.begin(), s. end(), 'A') ;
+    int c = count(s.begin(), s. end(), 'D') ;
 
-    int flag = 0, count = 0;
-
-    while(!q.empty())
-    {
-        if(q.front() == 'A')
-        {
-            flag++;
-            q.pop();
-        }
-        else if(q.front()=='D')
-        {
-            count++;
-            q.pop();
-        }
-    }
-
-    if(flag > count)
+    if(f > c)
     {
         cout << "Anton" << endl;
     }
-    else if(flag < count)
+    else if(f < c)
     {
         cout << "Danik" << endl;
     }
