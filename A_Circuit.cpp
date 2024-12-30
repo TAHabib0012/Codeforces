@@ -22,17 +22,21 @@ const LL mod = 998244353;
 
 void ans()
 {
-    int n;
+    LL n, c = 0;
     cin >> n;
-    vector<int> a(n + n);
+    vector<LL> a(n + n);
 
-    for (int i = 0; i < 2 * n; i++)
+    for (LL i = 0; i < 2 * n; i++)
     {
         cin >> a[i];
-    }
 
-    int c = count(a.begin(), a.end(), 1);
-    int k = 0, f = c % 2;
+        if (a[i] == 1)
+        {
+            c++;
+        }
+        
+    }
+    LL k = 0, f = c % 2;
     
     if (c <= n )
     {
@@ -43,7 +47,7 @@ void ans()
         k = (2 * n) % c;
     }
 
-    cout << f << HA << k << endl;
+    cout << c % 2 << HA << k << endl;
     
 }
 
